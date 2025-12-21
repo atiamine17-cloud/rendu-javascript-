@@ -1,0 +1,575 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* { box-sizing: border-box; }
+
+.tab-container {
+    
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: sticky; 
+    top: 0;           
+    z-index: 1000;    
+    padding: 20px 0;  
+    width: 100%;     
+  
+    background: rgba(240, 244, 248, 0.45); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.05); 
+}
+
+body.mode-sombre .tab-container {
+    background: rgba(26, 26, 26, 0.4); 
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    border-bottom: 3px solid blue;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+body.mode-sombre {
+  color: #f0f4f8; 
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url("images/fond d'ecran acceuil Best anime OG.png");    
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #1a1a1a;
+}
+body{
+  color: #f0f4f8; 
+  background: 
+    linear-gradient(rgba(143, 143, 143, 0.481), rgba(118, 117, 117, 0.799)), 
+    url("images/mood\ board\ 2\ copie.png");    
+    
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease; 
+  background-color: #f0f4f8; 
+  color: #1a1a1a;  
+}
+
+header.hero {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 16px;
+  text-align: left;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #66e0ff;
+  letter-spacing: .5px;
+}
+
+
+body.mode-sombre .lede{
+  color: #a9b1bd;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0;
+}
+
+.lede {
+  color: #080417;
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0;
+}
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid rgb(26, 25, 25);
+  background: rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.tab-btn {
+    padding: 10px 24px;
+    border: none;
+    background-color: #e0e0e0d3; 
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 50px;       
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    text-decoration: none;
+}
+
+
+.tab-btn:hover {
+    transform: translateY(-2px); 
+    background-color: #66e0ff; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+}
+
+
+.tab-btn.active {
+    background-color: #66e0ff; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+}
+body.mode-sombre .tab-btn:hover {
+    background-color: #d1d1d1;
+    transform: translateY(-2px); 
+      background-color: #2a3b6f; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+}
+body.mode-sombre .tab-btn.active {
+    background-color: #2a3b6f; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+} 
+
+body.mode-sombre .tab-btn {
+    background-color: #2a2a2a; 
+    color: #e0e0e0;          
+
+}
+
+body.mode-sombre .badge {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.episode{
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.06);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.episode{ background-color: green;}
+
+.badge[data-svc="adn"] a {
+  color: white;            
+  text-decoration: none;   
+}
+
+.hero .badge {
+    color: #181919;      
+    background: transparent; 
+    border-color: #b6b5b5;   
+}
+body.mode-sombre .hero .badge {
+    color: #adadad;      
+    background: transparent; 
+    border-color: #1a1919;   
+}
+
+.badge[data-svc="netflix"] a {
+  color: white;
+  text-decoration: none;
+}
+
+.badge[data-svc="crunchyroll"] a {
+  color: white;
+  text-decoration: none;
+}
+.badge[data-svc="crunchyroll"] a:hover{
+  cursor: url('./images/crunchyroll.png'),auto;
+}
+
+.badge[data-svc="adn"] a:hover{
+cursor:url('./images/adn.png'),auto;
+}
+
+.badge[data-svc="netflix"] a:hover{
+  cursor:url('./images/netflix\ log.png'),auto;
+}
+
+.grid {
+  max-width: 1100px;
+  margin: 20px auto 60px;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid rgb(255, 255, 255);
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: slideUp .8s ease;
+  width: 1066px;
+  height: 260px;
+}
+
+.card .h { color: #1a1a1a; }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(102,224,255,0.2);
+}
+
+.poster {
+  flex: 1;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0e1117;
+  overflow: hidden;
+  border-radius: 14px 0 0 14px;
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.poster .fallback {
+  width: 100%; height: 100%; border-radius: 10px;
+  display: flex; justify-content: center; align-items: center;
+  background: linear-gradient(135deg, #66e0ff33, #9b8cff33);
+  color: #cfe8ff; font-weight: 800; font-size: 20px;
+}
+
+.content {
+  flex: 1; display: flex; gap: 12px; padding: 14px;
+}
+
+.meta {
+  width: 120px; display: flex; flex-direction: column; gap: 8px;
+}
+
+.badge[data-svc="netflix"] { background: rgb(174, 20, 28); }
+.badge[data-svc="adn"] { background: rgb(63, 117, 183); }
+.badge[data-svc="crunchyroll"] { background: rgb(190, 106, 21); }
+.badge[data-svc="filmo"] { background: rgb(67, 124, 67); }
+
+body.mode-sombre .badge[data-svc="netflix"] { background: rgba(218, 7, 18, 0.15); }
+body.mode-sombre .badge[data-svc="adn"] { background: rgba(118,180,255,0.15); }
+body.mode-sombre .badge[data-svc="crunchyroll"] { background: rgba(255,153,51,0.18); }
+body.mode-sombre .badge[data-svc="filmo"] { background: rgba(170,255,170,0.18); }
+
+
+.main { 
+  flex: 1; display: flex; flex-direction: column; gap: 6px; }
+
+.h {
+   margin: 0; font-size: 22px; font-weight: 800; color: #fff; }
+
+body.mode-sombre .desc { 
+  margin: 0; color: #a9b1bd; line-height: 1.6; font-size: 15px; }
+
+.desc {
+   margin: 0; color: #0b0b0b; line-height: 1.6; font-size: 15px; }
+   
+footer {
+  padding: 40px 16px 50px;
+  text-align: center;
+  color: #a9b1bd;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.foot-links {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.foot-links a {
+  color: #66e0ff;
+  text-decoration: none;
+  transition: opacity .3s ease;
+}
+.foot-links a:hover { opacity: 0.7; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+  .card { flex-direction: column; }
+  .poster { width: 100%; height: 200px; }
+  .content { padding: 12px; }
+  .meta { width: auto; flex-direction: row; flex-wrap: wrap; }
+}
+
+.characters{
+  max-width: 1100px;
+  margin: 30px auto 70px;
+  padding: 0 16px;
+}
+
+.characters .title{
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #66e0ff;
+  letter-spacing: .3px;
+}
+
+.character-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1000px){
+  .character-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px){
+  .character-grid{ grid-template-columns: 1fr; }
+}
+
+.char-card{
+  background: #8991a3;
+  border: 1px solid rgba(74, 71, 71, 0.8);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: slideUp .6s ease both;
+  position: relative;
+  overflow: hidden;
+}
+body.mode-sombre .char-card {
+  background: #151922;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: transform .3s ease, box-shadow .3s ease;
+  animation: slideUp .6s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+.char-card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(102,224,255,0.2);
+}
+
+.char-card img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.char-card h3{
+  margin: 10px 12px 4px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #f0f4f8;
+}
+.char-card p{
+  margin: 0 12px 12px;
+  font-size: 14px;
+  color: #a9b1bd;
+}
+
+@keyframes slideUp{
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+
+body.mode-sombre .card {
+  background: #151922;
+  border: 1px solid rgba(255,255,255,0.08);
+  
+}
+body.mode-sombre .card .h { color: #fff; }
+
+.site-footer {
+    background-color: #0e1117; 
+    color: #a9b1bd;
+    padding: 60px 20px 20px;
+    margin-top: 80px; 
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1; 
+    min-width: 250px; 
+}
+
+/* Typographie du footer */
+.footer-logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.footer-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-links a {
+    display: block;  
+    
+    color: #a9b1bd;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+    font-size: 14px;
+    
+    padding-right: 30px;
+    padding-left: 0px; 
+}
+
+
+.footer-links a:hover {
+    color: #66e0ff;
+    padding-left: 10px; 
+    
+}
+ul {
+  list-style: none;
+}
+.social-links a {
+    display: block;
+    gap: 15px;
+    padding-left: 10px;
+    color: #aeafb1;
+    text-decoration: none;
+    transition: all 0.3s ease; 
+
+}
+.social-links a:hover {
+  color: #66e0ff;
+  padding-left: 20px; 
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+body.mode-sombre .site-footer {
+    background-color: rgba(14, 17, 23, 0.95); 
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+#monBouton {
+    
+    position: fixed; 
+    top: 20px;
+    right: 20px;
+    z-index: 2000; 
+    padding: 10px 20px;
+    border-radius: 50px; 
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    background-color: #1a1a1a; 
+    color: #ffffff;            
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+
+#monBouton:hover {
+    transform: translateY(-2px) scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+body.mode-sombre #monBouton {
+   background-color: #2a3b6f; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+} 
+
+
