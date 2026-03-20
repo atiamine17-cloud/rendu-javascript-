@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+
+:root {
+    --win-gray: #C0C0C0;
+    --win-blue: #0004ff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--win-blue);
+    background-image: url('image/moodboard blue portfolio (1)-Récupéré-Récupéré-Récupéré copie.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Courier New', monospace;
+    overflow-y: hidden;
+    color: black;
+}
+
+/* HEADER & NAVIGATION */
+.menu-fixe {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding: 20px 0;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.title {
+    color: white;
+    text-shadow: 3px 3px 0px black;
+    margin: 0 0 15px 0;
+    font-size: 2.5rem;
+}
+
+.onglet {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.onglet a, .btn-retro {
+    background-color: var(--win-gray);
+    color: black;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid #444;
+    border-bottom: 2px solid #444;
+    text-decoration: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.onglet a:hover, .btn-retro:hover {
+    border-top: 2px solid #444;
+    border-left: 2px solid #444;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: #a0a0a0;
+}
+
+/* SCROLL HORIZONTAL */
+.mySwiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.page {
+   min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+/* EFFET FENÊTRE WINDOWS */
+.window {
+    background: var(--win-gray);
+    border: 2px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.5);
+    overflow-y: auto;
+    max-height: 70vh;
+}
+
+.window-header {
+    background: linear-gradient(90deg, darkblue, #1084d0);
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.window-content {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 200px;
+}
+
+/* PROJETS */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+
+.project-card {
+    border: 1px inset white;
+    padding: 10px; 
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 8px; 
+}
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px; 
+    margin-bottom: 5px; 
+}
+
+.tag {
+    background: blue;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+}
+
+.liens {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .title {
+        font-size: 1.8rem; 
+        margin-bottom: 10px;
+    }
+    
+    .onglet {
+        gap: 8px;
+        flex-wrap: wrap; 
+    }
+    
+    .onglet a {
+        padding: 5px 12px;
+        font-size: 0.8rem;
+    }
+
+   
+    .window {
+        width: 90%;
+        max-height: 70vh; 
+        overflow-y: auto; 
+        margin-top: 50px; 
+    }
+
+    .window-content {
+        padding: 15px; 
+    }
+
+   
+    .project-grid {
+        grid-template-columns: 1fr; 
+        gap: 25px; 
+    }
+
+    .project-card {
+        background: var(--win-gray);
+        border: 2px solid white;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        box-shadow: 4px 4px 0px rgba(0,0,0,0.4);
+        padding: 15px;
+    }
+    
+    .project-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}
