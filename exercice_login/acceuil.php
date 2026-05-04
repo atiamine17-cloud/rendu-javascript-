@@ -16,6 +16,7 @@ if (!isset($_SESSION['user_id'])) {
 <body>
     <h1>Bienvenue, <?php echo $_SESSION['email']; ?> !</h1>
     <p>Ceci est une page sécurisée.</p>
-    <a href="logout.php">Se déconnecter</a> <!-- Lien de déconnexion
+    <a href="logout.php">Se déconnecter</a> 
+    <a href="collection.php" class="tab-btn">Gérer ma collection d'animés </a>
 </body>
 </html>

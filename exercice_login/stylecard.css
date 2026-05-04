@@ -1,0 +1,226 @@
+
+body {
+    background-color: #0b1221; /* Un beau bleu nuit très profond */
+    color: #e2e8f0; /* On met le texte général en gris très clair/blanc pour qu'il soit lisible */
+    margin: 0; /* Enlève les marges blanches par défaut du navigateur sur les bords */
+    font-family: 'Inter', sans-serif; /* Une police propre et moderne */
+}
+
+.game-header {
+    background-color: #0e1117; /* Un beau fond sombre */
+    padding: 20px 40px;
+    display: flex; /* Aligne les éléments horizontalement */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Pousse le bouton à gauche et le titre à droite */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.btn-retour {
+    color: #66e0ff;
+    text-decoration: none; 
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: 2px solid #66e0ff;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-retour:hover {
+    background-color: #66e0ff;
+    color: #0e1117;
+    transform: translateX(-5px); 
+}
+
+.game-header .title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #66e0ff;
+}
+
+.card {
+    background: linear-gradient(145deg, #1e293b, #0f172a); /* Un magnifique dégradé bleu nuit/gris sombre */
+    border: 1px solid rgba(102, 224, 255, 0.15); /* Bordure cyan très subtile */
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* On prépare l'animation fluide pour le survol */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; 
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Petite ombre de base */
+}
+
+/* LA MAGIE DU SURVOL : La carte se soulève et s'illumine ! */
+.card:hover {
+    transform: translateY(-10px); /* Soulève la carte de 10px vers le haut */
+    box-shadow: 0 15px 30px rgba(102, 224, 255, 0.15); /* Ombre lumineuse cyan (couleur de ton thème) */
+    border-color: rgba(102, 224, 255, 0.5); /* La bordure s'allume */
+}
+
+/* L'image du personnage */
+.card img {
+    display: block;
+    width: 100%;
+    height: 280px; 
+    object-fit: cover;
+    border-bottom: 2px solid rgba(102, 224, 255, 0.1); /* Ligne de séparation sous l'image */
+}
+
+/* Le Nom du personnage (Il faut bien utiliser la balise <h3> dans ton HTML) */
+.card h3 {
+    margin: 15px 10px 4px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff; /* Titre en blanc pur */
+    letter-spacing: 0.5px;
+}
+
+/* Le Nom de l'anime */
+.card p {
+    margin: 0 12px 20px;
+    font-size: 13px;
+    color: #94a3b8; /* Gris clair bleuté, très élégant et lisible */
+    font-weight: 600;
+    text-transform: uppercase; /* Met le texte en MAJUSCULES pour le style "Trading Card" */
+    letter-spacing: 1px;
+}
+
+.characters {
+    max-width: 1100px;
+    margin: 30px auto 70px;
+    padding: 0 16px;
+}
+
+
+#list-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+.bouton-tirage {
+     padding: 15px 25px; 
+    font-size: 16px; 
+    font-weight: 800; 
+    cursor: pointer; 
+    background-color: #4d6eff; 
+    color: white; 
+    border: none; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(77, 178, 255, 0.4); 
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    display: block;
+}
+.bouton-tirage:hover {
+    transform: translateY(-2px); 
+    background-color: #66e0ff; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(102, 224, 255, 0.4); 
+}
+#bouton-jaime {
+    padding: 15px 25px; 
+    font-size: 16px; 
+    font-weight: 800; 
+    cursor: pointer; 
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4); 
+    transition: all 0.3s ease;
+    margin: 20px auto;
+    display: block;
+}
+#bouton-jaime:hover {
+    transform: translateY(-2px); 
+    background-color: #cc0000; 
+    color: #0b0b0b;            
+    box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4); 
+}
+.collection {
+    margin-top: 60px; 
+    border-top: 2px solid rgba(255,255,255,0.1); 
+    padding-top: 30px;
+}
+
+.favoris{
+    text-align: center; 
+    color: #66e0ff;
+}
+
+#grille-favoris {
+list-style: none; 
+padding: 0;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+gap: 20px;
+padding: 0;
+margin: 0;
+list-style: none; 
+}
+
+.characters-gride {
+    list-style: none; 
+    padding: 0;
+}
+/* ========================================= */
+/* 📱 RESPONSIVE DESIGN (Mobiles et Tablettes) */
+/* ========================================= */
+
+/* RÈGLES POUR LES ÉCRANS DE MOINS DE 768px (Tablettes et grands téléphones) */
+@media (max-width: 768px) {
+    
+    /* 1. Le Header (En-tête) */
+    .game-header {
+        flex-direction: column; /* On empile le bouton et le titre au lieu de les mettre côte à côte */
+        gap: 15px; /* Espace entre le bouton et le titre */
+        padding: 15px 20px; /* On réduit les marges intérieures */
+        text-align: center;
+    }
+
+    .game-header .title {
+        font-size: 22px; /* On réduit la taille du titre pour qu'il tienne sur l'écran */
+    }
+
+    /* 2. Le bouton "Tirer une carte" */
+    .bouton-tirage {
+        width: 90%; /* Le bouton prend presque toute la largeur sur mobile, c'est plus facile à cliquer ! */
+        max-width: 300px;
+    }
+}
+
+/* RÈGLES POUR LES ÉCRANS DE MOINS DE 480px (Petits téléphones) */
+@media (max-width: 480px) {
+    
+    /* 3. La Grille de cartes */
+    #list-card, #grille-favoris {
+        /* On réduit la taille minimum des cartes de 220px à 140px pour en afficher au moins 2 par ligne sur mobile */
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+        gap: 12px; /* On réduit l'espace entre les cartes */
+    }
+
+    /* 4. Les images des cartes */
+    .card img {
+        height: 200px; /* On réduit la hauteur des images pour que la carte ne soit pas trop géante sur un petit écran */
+    }
+    
+    /* 5. Le texte des cartes */
+    .card h3 {
+        font-size: 16px; /* Titre plus petit */
+        margin: 10px 8px 4px;
+    }
+    
+    .card p {
+        font-size: 11px; /* Texte plus petit */
+        margin: 0 8px 10px;
+    }
+}

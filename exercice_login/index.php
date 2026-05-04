@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OG's Anime — Bibliothèque</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tab-container">
+    <button id="monBouton">Activer le Dark Mode </button>
+    <a href="contact.html" class="tab-btn"> OG's Anime card game</a>
+    <a href="#grid" class="tab-btn">Anime</a>
+    <a href="#characters" class="tab-btn">Personnages</a>
+    <a href="#site-footer" class="tab-btn">Contact</a>
+</div>
+  
+  <header class="hero" role="banner">
+    <span class="badge" aria-hidden="true"> <data value=""></data>Le blog d'Amine</span>
+    <h1 class="title">OG's Anime</h1>
+    <p class="lede">Une sélection personnelle d'anime cultes : animation, OST, personnages. Découvre les classiques indémodables.</p>
+  </header>
+
+
+  <main id="grid" class="grid" role="list">
+   <article class="card" role="listitem">
+  <div class="poster"><img src="images/gto.png" alt="Great Teacher Onizuka"></div>
+  <div class="content">
+    <aside class="meta">
+      <span class="badge" data-svc="adn"><a href="https://animationdigitalnetwork.com/video/307-great-teacher-onizuka/4803-episode-1" target="_blank">ADN</a></span>
+      <span class="badge" data-svc="netflix"><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></span> 
+    </aside>
+    <div class="main">
+      <h2 class="h">Great Teacher Onizuka</h2>
+      <p class="desc">Ancien loubard devenu prof, Onizuka règle les problèmes d'une classe infernale avec du cœur, du chaos et des leçons de vie mémorables.</p>
+      
+      <div class="audio-wrapper">
+        <audio controls controlsList="nodownload">
+            <source src="musique!/Drivers High - Remastered 2022.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+      </div>
+  </div>
+</article>
+
+<article class="card" role="listitem">
+  <div class="poster"><img src="images/cowboy_bebop.png" alt="Cowboy Bebop"></div>
+  <div class="content">
+    <aside class="meta"><span class="badge" data-svc="netflix"><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></span></aside>
+    <div class="main">
+      <h2 class="h">Cowboy Bebop</h2>
+      <p class="desc">Space‑western jazzy de Watanabe : chasseurs de primes, mélancolie et style absolu. See you, space cowboy…</p>
+      
+      <div class="audio-wrapper">
+        <audio controls controlsList="nodownload">
+            <source src="musique!/Tank!.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+       </div>
+  </div>
+</article>
+
+<article class="card" role="listitem">
+  <div class="poster"><img src="images/slamdunk.png" alt="slamdunk"></div>
+  <div class="content">
+    <aside class="meta"><span class="badge" data-svc="adn"><a href="https://animationdigitalnetwork.com/video/583-slam-dunk/10599-episode-1" target="_blank">ADN</a></span></aside>
+    <div class="main">
+      <h2 class="h">Slam Dunk</h2>
+      <p class="desc">Le basket des 90s : rivalités, humour et matchs épiques. Hanamichi passe de voyou à pivot du rêve.</p>
+      
+      <div class="audio-wrapper">
+        <audio controls controlsList="nodownload">
+            <source src="musique!/Slam Dunk  Opening 1 HD.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+       </div>
+  </div>
+</article>
+  
+<article class="card" role="listitem">
+  <div class="poster"><img src="images/initiald.png" alt="Initial D"></div>
+  <div class="content">
+    <aside class="meta"><span class="badge" data-svc="adn"><a href="https://animationdigitalnetwork.com/video/474-initial-d-saison-1-first-stage" target="_blank">ADN</a></span></aside>
+    <div class="main">
+      <h2 class="h">Initial D</h2>
+      <p class="desc">Takumi est un jeune étudiant qui fait des livraisons de tofu nocturnes pour l'entreprise de son père, il va se faire enroler dans le monde des courses nocturnes dans les montagnes de Gunma avec sa légendaire AE86.</p>
+      
+      <div class="audio-wrapper">
+        <audio controls controlsList="nodownload">
+            <source src="musique!/Initial D - Heartbeat.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+       </div>
+  </div>
+</article>
+
+<article class="card" role="listitem">
+  <div class="poster"><img src="images/berserk.png" alt="Berserk"></div>
+  <div class="content">
+    <aside class="meta"><span class="badge" data-svc="netflix"><a href="https://www.netflix.com/browse" target="_blank">Netflix</a></span></aside>
+    <div class="main">
+      <h2 class="h">Berserk</h2>
+      <p class="desc">Dark fantasy brutale : destin, trahison et épée colossale. Une légende mature.</p>
+      
+      <div class="audio-wrapper">
+        <audio controls controlsList="nodownload">
+            <source src="musique!/Gats.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </div>
+       </div>
+  </div>
+ </article>
+
+
+
+
+  <section id="characters" class="characters">
+    <h2 class="title">Personnages</h2>
+      <div class="character-grid">
+        <article class="char-card">
+          <img src="images/onizuka.jpg" alt="Onizuka">
+          <h3>Onizuka</h3>
+          <p>Great Teacher Onizuka</p>
+        </article>
+
+        <article class="char-card">
+          <img src="images/cowboy 3.jpg" alt="Spike Spiegel">
+          <h3>Spike Spiegel</h3>
+          <p>Cowboy Bebop</p>
+        </article>
+        
+        <article class="char-card">
+          <img src="images/hanamichi.jpg" alt="Hanamichi">
+          <h3>Hanamichi</h3>
+        <p>Slam Dunk</p>
+      </article>
+      <article class="char-card">
+        <img src="images/takumi.jpg" alt="Takumi Fujiwara">
+        <h3>Takumi Fujiwara</h3>
+        <p>Initial D</p>
+      </article>
+      <article class="char-card">
+        <img src="images/guts.jpg" alt="Guts">
+        <h3>Guts</h3>
+        <p>Berserk</p>
+      </article>
+      <article class="char-card">
+<img src="images/ryo.jpg" alt="Ryo Saeba">
+<h3>Ryo Saeba</h3>
+<p>City Hunter</p>
+</article>
+<article class="char-card">
+<img src="images/ippo.jpg" alt="Ippo">
+<h3>Ippo</h3>
+<p>Hajime no Ippo</p>
+</article>
+<article class="char-card">
+<img src="images/kenshin.jpg" alt="Kenshin">
+<h3>Kenshin</h3>
+<p>Kenshin le Vagabond</p>
+</article>
+<article class="char-card">
+<img src="images/shinji.jpg" alt="Shinji Ikari">
+<h3>Shinji Ikari</h3>
+<p>Evangelion</p>
+</article>
+</div>
+</section>
+  </main>
+
+<section id="classiques" class="classiques">
+  <h2>Quelques classiques à découvrir :</h2>
+<div id="anime-container">
+    <p>Chargement des pépites...</p>
+</div>
+</section>
+
+
+ <footer id="site-footer" class="site-footer">
+    <div class="footer-container">
+        
+        <div class="footer-col">
+            <h3 class="footer-logo">OG's Anime</h3>
+            <p class="footer-desc">
+                La sélection ultime des classiques de l'animation japonaise. 
+                Regarde le meilleur, oublie le reste.
+            </p>
+        </div>
+
+        <div class="footer-col">
+           <p class="footer-link-Navigation">
+            <h4>Navigation
+            </h4>
+           </p>
+            <ul class="footer-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Top Anime</a></li>
+                <li><a href="#">Personnages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Discord</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2026 OG's Anime. Fait avec passion.
+    </div>
+
+    <form action="" id="connexion" method="post" enctype="multipart/form-data">
+      <div>
+      <label for="pseudo">Ton pseudo</label>
+      <input type="text" id="name" name="pseudo" placeholder="Ton pseudo">
+      </div>
+      <div>
+        <label for="email">Ton email</label>
+        <input type="email" id="email" name="email" placeholder="Ton eMail">
+      </div>
+      <div>
+        <label for="mot de passe">Ton mot de passe </label>
+        <input type="password" id="password" name="password" placeholder="Ton mot de passes">
+      </div>
+    </form>
+      <button id="inscription-btn">S'inscrire</button>
+        
+    <form action="" id="inscription-form" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="pseudo">Ton pseudo</label>
+        <input type="text" id="pseudo-inscription" name="pseudo" placeholder="Ton pseudo">
+    </div>
+    <div>
+        <label for="email">Ton email</label>
+        <input type="email" id="email-inscription" name="email" placeholder="Ton eMail">
+    </div>
+    <div>
+        <label for="password">Ton mot de passe</label>
+        <input type="password" id="password-inscription" name="password" placeholder="Ton mot de passe">
+    </div>
+    <div>
+        <label for="password-confirm">Confirme ton mdp</label>
+        <input type="password" id="password-confirmation" name="password confirmation" placeholder="Confirme ton mdp">
+    </div>
+
+    <div id="qcm-section" class="qcm">
+        <label>Ton genre d'animé préféré</label>
+        <div class="radio-container">
+            <div class="radio-item">
+                <input type="radio" id="shonen" name="genre" value="shonen">
+                <label for="shonen" class="label-inline">Shonen</label>
+            </div>
+            <div class="radio-item">
+                <input type="radio" id="seinen" name="genre" value="seinen">
+                <label for="seinen" class="label-inline">Seinen</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="submit-btn">
+        <button type="submit" id="soumettre">Soumettre</button>
+    </div>
+</form>
+
+<div id="feedback-message" style="display: none; opacity: 0;"> Inscription réussie ! </div>
+</footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script src="anime.js"></script>
+</body>
